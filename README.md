@@ -20,7 +20,8 @@ Role Variables
     git_branch: "{{ item.value.repo_git_branch|default('master') }}"
     git_repo_name: "{{ item.value.repo_name }}"
 
-
+true, false
+with_pushes: true
 
 Dependencies
 ------------
@@ -34,7 +35,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - xussof.common_git-add
+         - xussof.common_git-push
 
 License
 -------
