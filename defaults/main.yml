@@ -1,7 +1,7 @@
 #EXAMPLE how to use it. DON'T UNCOMMENT
 #- name: Git push
 #  include_role:
-#    name: xussof.common_git-push
+#    name: common_git-push
 #  vars:
 #    git_chdir: "/{{ host_root_dir }}/{{ repos_dir }}/{{ item.value.repo_git_name }}/{{ item.value.repo_project }}{{ item.value.repo_name }}"
 #    git_branch: "{{ item.value.repo_git_branch|default('master') }}"
